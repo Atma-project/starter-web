@@ -19,6 +19,8 @@
     <body>
         <div id="loader"></div>
         <div id="app">
+            <a v-link="{ path: '/home' }">Go to Home</a>
+            <a v-link="{ path: '/map' }">Go to Map</a>
 
             <router-view></router-view>
         </div>

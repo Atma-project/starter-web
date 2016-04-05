@@ -22,4 +22,4 @@ module.exports = {
         "history": true,
         "suppressTransitionError": true
     }
-}
+};

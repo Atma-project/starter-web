@@ -17,9 +17,9 @@ module.exports = {
         "root": ""
     },
     "router": {
+        "saveScrollPosition": true,
         "transitionOnLoad": true,
         "history": true,
-        "root": "/",
         "suppressTransitionError": false
     }
 }
