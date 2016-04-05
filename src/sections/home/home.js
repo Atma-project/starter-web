@@ -1,9 +1,7 @@
+import './home.scss'
+
 import Vue from 'vue'
 
-const home = Vue.extend({
-    template: '<p>This is home buddy!</p>'
+export default Vue.extend({
+    template: require('./home.html')
 })
-
-Vue.component('Home', home);
-
-export default home;

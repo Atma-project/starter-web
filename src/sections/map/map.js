@@ -1,5 +1,7 @@
+import "./map.scss"
+
 import Vue from 'vue'
 
 export default Vue.extend({
-    template: '<p>This is map!</p>'
+    template: require('./map.html')
 })
