@@ -4,5 +4,8 @@
     },
     "/map": {
         "component": "Map"
+    },
+    "/experience/atlantis": {
+        "component": "Atlantis"
     }
 }
