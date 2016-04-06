@@ -6,13 +6,7 @@ module.exports = {
     "vue": {
         "silent": false
     },
-    "breakpoints": {
-        xsmall: 320,
-    	small:  768,
-    	medium: 1024,
-    	large:  1440,
-    	xlarge:	1600
-    },
+    "gui": true,
     "http": {
         "root": ""
     },

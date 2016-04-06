@@ -3,17 +3,11 @@ module.exports = {
     "apiKeys": {
         "google": ""
     },
-    "breakpoints": {
-        xsmall: 320,
-    	small:  768,
-    	medium: 1024,
-    	large:  1440,
-    	xlarge:	1600
-    },
     "vue": {
         "silent": true
     },
-    "resources": {
+    "gui": true,
+    "http": {
         "root": ""
     },
     "router": {
@@ -22,4 +16,4 @@ module.exports = {
         "history": true,
         "suppressTransitionError": true
     }
-};
+}
