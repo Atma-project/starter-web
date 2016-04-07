@@ -1,6 +1,7 @@
-var path              = require('path'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin'),
-    config            = require('./package').config;
+var path                          = require('path'),
+    ExtractTextPlugin             = require('extract-text-webpack-plugin'),
+    config                        = require('./package').config,
+    webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 
 config.resolve = {
     root: path.resolve(config.root),
@@ -47,8 +48,6 @@ config.module = {
     ]
 };
 
-config.devtool = 'eval';
-
 config.postcss = [
     require('autoprefixer')(config.autoprefixer)
 ];
@@ -56,5 +55,7 @@ config.postcss = [
 config.plugins = [
     new ExtractTextPlugin(config.cssFile)
 ];
+
+config.target = webpackTargetElectronRenderer(config);
 
 module.exports = config;
