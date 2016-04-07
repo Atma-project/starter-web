@@ -1,12 +1,12 @@
 import $ from 'chirashi-imports'
-
+import Tweenmax from 'gsap'
 import World from './world/world.js'
 
 export class Experience {
     constructor(options) {
         this.frame = 0
-
         this.options = options
+
         this.world = new World($.width(options.container), $.height(options.container), options.postProcessing, options.data, options.debug)
         $.append(options.container, this.world.view)
 

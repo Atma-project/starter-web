@@ -1,12 +1,13 @@
 import './atlantis.scss'
 
+import $ from 'chirashi-imports'
+
 import Vue from 'vue'
+Vue.config.debug = true
 import config from 'config'
 
 import dat from 'dat-gui'
 import Experience from './experience/experience'
-
-Vue.config.debug = true
 
 export default Vue.extend({
     template: require('./atlantis.html'),

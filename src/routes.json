@@ -1,4 +1,7 @@
 {
+    "/": {
+        "component": "Atlantis"
+    },
     "/home": {
         "component": "Home"
     },
