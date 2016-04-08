@@ -1,1 +1,1 @@
-# prism-starter-web
+# starter-web
